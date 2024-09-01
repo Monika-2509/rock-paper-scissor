@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", system-ui;
+    text-align:center;
+}
+
+/* Title */
+.title{
+    background-color: #B5C18E;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+#refresh{
+    display: none;
+    margin-left:1rem;
+}
+/* Title */
+
+/* Score-Container */
+.score-container{
+    /* transition: all .6s ease-in; */
+    width:50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8rem;
+    margin-top:4rem;
+    padding:2.5rem;
+    background-color: #ACE1AF;
+    border-radius: 25px;
+}
+
+#user-score , #comp-score{
+    font-size: 2.5rem;
+}
+h4{
+    font-size:2rem;
+}
+#user-choice , #comp-choice{
+    font-size: 2rem;
+    margin-top:1rem;
+    color:#9B4444;
+}
+/* Score-Container */
+
+/* Choices */
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5rem 0rem 0rem 0rem;
+    gap:4rem;
+}
+.choice{
+    width:165px;
+    height:165px;
+}
+.choice img{
+    width:150px;
+    height:150px;
+}
+.choice :hover{
+     opacity: 0.5;
+}
+/* Choices */
+
+/* Msg-Container */
+.msg-container{
+    width:50%;
+    margin:4rem auto 0rem auto;
+    background-color: #ACE1AF;
+    padding:2rem;
+    border-radius: 25px;
+}
+#msg{
+    font-size:2.5rem;
+    font-weight:600;
+}
+/* Msg-Container */
+
+
+/* Media Queries */
+@media screen and (max-width:728px){
+    .title{
+        font-size:1.5rem;
+    }
+    .score-container{
+        width:80%;
+        gap:6rem;
+        padding:2rem;
+    }
+    #user-score , #comp-score{
+        font-size: 1.5rem;
+    }
+    #user-choice , #comp-choice , h4{
+        font-size: 1rem;
+    }
+    .choices{
+        flex-wrap: wrap;
+    }
+    .msg-container{
+        width:80%;
+        margin-top:3rem;
+    }
+    #msg{
+        font-size:1.5rem;
+    }
+}
+/* Media Queries */
